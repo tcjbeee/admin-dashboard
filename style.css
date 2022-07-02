@@ -1,0 +1,56 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.dashboard {
+    display: grid;
+    border: 1px solid black;
+}
+
+.dashboardMenu {
+    background-color: #0ea5e9;
+    color: white;
+    height: 75vh;
+    width: 16vw;
+    padding-left: 1vw;
+    padding-bottom: 24.85vh;
+}
+
+.dashboardMenu .svg {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(65deg) brightness(100%) contrast(103%);
+    height: 1.5vw;
+}
+
+.option.dashboardTitle {
+    height: 5vh;
+}
+
+
+.dashboardMenu{
+    display: grid;
+    grid-template-rows: repeat (10, 1vw);
+    grid-template-columns: 100px;
+}
+
+a, a:visited{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+
+.settings {
+    padding-top: 5vh;
+}
+
+h1 {
+    font-size: 2vw;
+}
