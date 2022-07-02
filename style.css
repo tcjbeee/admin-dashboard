@@ -6,7 +6,6 @@ body {
 
 .dashboard {
     display: grid;
-    border: 1px solid black;
     grid-template-columns: 16vw auto;
     grid-template-rows: 15vh auto;
 }
@@ -17,11 +16,79 @@ body {
     height: 75vh;
     padding-left: 1vw;
     padding-bottom: 24.85vh;
+    z-index: 1;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.274);
 }
 
 .header {
-    display: flex;
+    display: grid;
     background-color: white;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 60% auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.397);
+    padding-left: 2%;
+}
+
+.avatar {
+    height: 75%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.avatarBig {
+    height: 7vh;
+    width: 7vh;
+    display: block;
+}
+
+.header.svg {
+    size: 2vh;
+}
+
+#hi {
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+button {
+    background-color: #0ea5e9;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 20px;
+    border-color: #0ea5e9;
+    font-size: 1.5vw;
+    border-style: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.473);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
 }
 
 .searchBar {
