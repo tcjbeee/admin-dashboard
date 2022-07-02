@@ -135,3 +135,115 @@ a, a:visited{
 h1 {
     font-size: 2vw;
 }
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+.content {
+    margin-left: 18vw;
+    display: grid;
+    grid-template-columns: 50vw 24vw;
+    grid-template-rows: repeat (4, 25vw);
+    gap: 5vw;
+    grid-template-areas:
+        "projects announcements"
+        "projects auto"
+        "projects auto"
+        "projects trending";
+}
+
+.contentTitle {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.projectsContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% auto;
+    gap: 2vw;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    border-left: 0.5vw solid orange;
+    padding-left: 0.5vw;
+    max-height: fit-content;
+    min-height: 20vh;
+    width: auto;
+}
+
+.project .actions {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    margin-left: 50%;
+    margin-top: 20%;
+    padding-bottom: 8%;
+    justify-content: space-evenly;
+}
+
+.project p {
+    position: relative;
+    margin-left: 1vw;
+    margin-right: 3vw;
+    color: rgb(77, 77, 77);
+}
+
+p.title {
+    color: black;
+    font-size: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 0%;
+}
+
+.announcementsHolder {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.announcement {
+    justify-content: center;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.announcement:nth-child(1) {
+    padding-top: 0;
+}
+
+.announcement:nth-child(3) {
+    border-bottom: 0;
+}
+
+.announcementTitle {
+    font-weight: bold;
+    font-size: 1rem; 
+}
+
+.announcementDescription {
+    font-size: 0.9rem;
+    color: rgb(77, 77, 77);
+}
+
+.trendingHolder {
+    background-color: white;
+    border-radius: 10px;
+}
