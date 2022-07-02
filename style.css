@@ -142,6 +142,7 @@ h1 {
 
 .announcements {
     grid-area: announcements;
+    height: fit-content;
 }
 
 .trending {
@@ -152,13 +153,11 @@ h1 {
     margin-left: 18vw;
     display: grid;
     grid-template-columns: 50vw 24vw;
-    grid-template-rows: repeat (4, 25vw);
+    grid-template-rows: 40% 40%;
     gap: 5vw;
     grid-template-areas:
         "projects announcements"
-        "projects auto"
-        "projects auto"
-        "projects trending";
+        "projects trending"
 }
 
 .contentTitle {
@@ -246,4 +245,19 @@ p.title {
 .trendingHolder {
     background-color: white;
     border-radius: 10px;
+}
+
+.trendingProfile {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 1vw;
+    
+}
+
+.profileInfo {
+    align-content: center;
+}
+
+.task {
+    color: rgb(77, 77, 77);
 }
